@@ -7,7 +7,7 @@ function init()
   
   -- OpenStarbound currently returns a table instead of multiple values like in StarExtensions
   chat_parseArguments = chat.parseArguments
-  if type(chat.parseArguments("")) == "table" then
+  if type(chat.parseArguments("meow")) == "table" then
     chat_parseArguments = function(...)
       return table.unpack(chat.parseArguments(...))
     end
