@@ -1,0 +1,16 @@
+{
+  "dayTime": 2400,
+  "timeNames": {
+    "sunrise": 0.98,
+    "day": 0.05,
+    "noon": 0.25,
+    "sunset": 0.48,
+    "night": 0.55,
+    "midnight": 0.75
+  },
+  "strings": {
+    "currentTime": "^white;Current time is %.0f",
+    "setTime": "^white;Set time to %.0f",
+    "help": "/time usage:\n - ^white;/time query\n^reset; - ^white;/time ^gray;<number>\n^reset; - ^white;/time ^gray;<sunrise / day / noon / sunset / night / midnight>\n^reset; - ^white;/time add ^gray;<number>"
+  }
+}

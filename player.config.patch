@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/genericScriptContexts/pat_timecontrol",
+    "value": "/pat_timecontrol.lua"
+  }
+]
