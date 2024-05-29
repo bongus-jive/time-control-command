@@ -1,0 +1,11 @@
+{
+  "author" : "patman",
+  "description" : "/timewarp to a specific time of day for the current world\n\ndo /time for help",
+  "friendlyName" : "Time Control Command",
+  "link" : "steam://url/CommunityFilePage/3256623666",
+  "name" : "pat_timecontrol",
+  "steamContentId" : "3256623666",
+  "steamDescription" : "adds a /time command\nit gets the current world's current time & day length, then runs a /timewarp command to skip to a specific time of day\n\nits kindve a little bit like minecraft's /time\n\nthe time is a number between 0 and 2400\n\n[code]\n/time query\n/time <number>\n/time add <number>\n/time sunrise|day|noon|sunset|night|midnight\n[/code]\n\n\n[img]https://i.imgur.com/wXjYMqP.gif[/img]https://discord.gg/GdsQSgV\n[img]https://i.imgur.com/uyG8oTa.gif[/img]https://www.patreon.com/pathiccstar\n[img]https://i.imgur.com/xVfcRRH.gif[/img]https://ko-fi.com/patmanf\n[img]https://i.imgur.com/jJAj6jF.gif[/img]https://github.com/bongus-jive/TimeControlCommand",
+  "steamTitle" : "Time Control Command [SE/oSB]",
+  "version" : "1.0"
+}
