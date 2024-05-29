@@ -4,6 +4,14 @@ function init()
     script.setUpdateDelta(0)
     return
   end
+  
+  -- OpenStarbound currently returns a table instead of multiple values like in StarExtensions
+  chat_parseArguments = chat.parseArguments
+  if type(chat.parseArguments("")) == "table" then
+    chat_parseArguments = function(...)
+      return table.unpack(chat.parseArguments(...))
+    end
+  end
 
   self = root.assetJson("/pat_timecontrol.sussy")
   message.setHandler("/time", time)
@@ -18,7 +26,7 @@ function time(_, localMsg, stringArgs)
     return
   end
 
-  local arg, arg2 = chat.parseArguments(stringArgs)
+  local arg, arg2 = chat_parseArguments(stringArgs)
   local timeOfDay = world.timeOfDay()
   local currentTime = timeOfDay * self.dayTime
 
