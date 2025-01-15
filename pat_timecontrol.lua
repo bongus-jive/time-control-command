@@ -1,5 +1,5 @@
 function init()
-  if not chat.command or not chat.parseArguments then
+  if not chat or not chat.command or not chat.parseArguments then
     sb.logWarn("Time Control requires StarExtensions or OpenStarbound")
     script.setUpdateDelta(0)
     return
